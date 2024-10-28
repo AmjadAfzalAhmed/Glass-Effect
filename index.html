@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Glass Effect</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container" id="container">
+      <div class="dot-container" id="toggle">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+      </div>
+
+      <h1>facebook</h1>
+
+      <div class="line"></div>
+
+      <div class="profile">
+        <img src="logo.jpg" alt="logo" class="logo">
+        <div class="profile-text">
+          <h2>Amjad B</h2>
+          <p class="account">My Account</p>
+        </div>
+        <span class="toggle-box"><i class="fa-solid fa-plus"></i></span>
+      </div>
+
+      <div class="line"></div>
+      <p class="menu">MENU</p>
+
+      <ul>
+        <li class="bar"><i class="fa-solid fa-house"><span>Home</span></i></li>
+        <li class="bar"><i class="fa-solid fa-pen-to-square"><span>Post</span></i></li>
+        <li class="bar"><i class="fa-solid fa-user-group"><span>Friends</span></i></li>
+        <li class="bar"><i class="fa-solid fa-comment-dots"><span>Messenger</span></i></li>
+        <li class="bar"><i class="fa-solid fa-bell"><span>Notification<i class="not-num">2</i></span></i></li>
+        <li class="bar"><i class="fa-solid fa-people-group"><span>Group</span></i></li>
+        <li class="bar"><i class="fa-solid fa-gear"><span>Setting</span></i></li>
+      </ul>
+
+      <div class="line" style="position: relative; top: 5px;"></div>
+
+      <div class="logout-container">
+        <i class="fa-solid fa-arrow-right-from-bracket" style="position: relative; left: 0; top: 30px;
+        font-size: 20px;"></i>
+        <p class="logout-txt">Log out</p>
+      </div>
+    </div>
+
+    <script>
+      let container = document.getElementById('container');
+      let toggle = document.getElementById('toggle');
+
+      toggle.onclick = function () {
+        container.classList.toggle('active')
+      }
+    </script>
+  </body>
+</html>
