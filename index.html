@@ -15,18 +15,22 @@
   </head>
   <body>
     <div class="container" id="container">
+      <!-- Dot menu -->
       <div class="dot-container" id="toggle">
         <div class="dot"></div>
         <div class="dot"></div>
         <div class="dot"></div>
       </div>
 
+      <!-- Title -->
       <h1>facebook</h1>
 
+      <!-- Divider -->
       <div class="line"></div>
 
+      <!-- Profile Section -->
       <div class="profile">
-        <img src="logo.jpg" alt="logo" class="logo">
+        <img src="logo.jpg" alt="Profile Logo" class="logo" />
         <div class="profile-text">
           <h2>Amjad B</h2>
           <p class="account">My Account</p>
@@ -34,35 +38,41 @@
         <span class="toggle-box"><i class="fa-solid fa-plus"></i></span>
       </div>
 
+      <!-- Divider -->
       <div class="line"></div>
       <p class="menu">MENU</p>
 
+      <!-- Menu Items -->
       <ul>
-        <li class="bar"><i class="fa-solid fa-house"><span>Home</span></i></li>
-        <li class="bar"><i class="fa-solid fa-pen-to-square"><span>Post</span></i></li>
-        <li class="bar"><i class="fa-solid fa-user-group"><span>Friends</span></i></li>
-        <li class="bar"><i class="fa-solid fa-comment-dots"><span>Messenger</span></i></li>
-        <li class="bar"><i class="fa-solid fa-bell"><span>Notification<i class="not-num">2</i></span></i></li>
-        <li class="bar"><i class="fa-solid fa-people-group"><span>Group</span></i></li>
-        <li class="bar"><i class="fa-solid fa-gear"><span>Setting</span></i></li>
+        <li class="bar"><i class="fa-solid fa-house"></i><span>Home</span></li>
+        <li class="bar"><i class="fa-solid fa-pen-to-square"></i><span>Post</span></li>
+        <li class="bar"><i class="fa-solid fa-user-group"></i><span>Friends</span></li>
+        <li class="bar"><i class="fa-solid fa-comment-dots"></i><span>Messenger</span></li>
+        <li class="bar">
+          <i class="fa-solid fa-bell"></i><span>Notification<i class="not-num">2</i></span>
+        </li>
+        <li class="bar"><i class="fa-solid fa-people-group"></i><span>Group</span></li>
+        <li class="bar"><i class="fa-solid fa-gear"></i><span>Settings</span></li>
       </ul>
 
-      <div class="line" style="position: relative; top: 5px;"></div>
+      <!-- Divider -->
+      <div class="line" style="top: 5px;"></div>
 
+      <!-- Logout Section -->
       <div class="logout-container">
-        <i class="fa-solid fa-arrow-right-from-bracket" style="position: relative; left: 0; top: 30px;
-        font-size: 20px;"></i>
+        <i class="fa-solid fa-arrow-right-from-bracket"></i>
         <p class="logout-txt">Log out</p>
       </div>
     </div>
 
     <script>
-      let container = document.getElementById('container');
-      let toggle = document.getElementById('toggle');
+      const container = document.getElementById('container');
+      const toggle = document.getElementById('toggle');
 
-      toggle.onclick = function () {
-        container.classList.toggle('active')
-      }
+      // Toggle active class on the container
+      toggle.onclick = () => {
+        container.classList.toggle('active');
+      };
     </script>
   </body>
 </html>
